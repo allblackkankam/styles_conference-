@@ -1,0 +1,42 @@
+	{% extends 'layout.html' %}
+	{% load static %}
+	{% block content %}
+	
+	<section class="hero container">
+  		<h2>Dedicated to the Craft of Building Websites</h2>
+  		<p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
+  		<a class="btn btn-alt" href="/register">Register Now</a>
+	</section>
+	<section class="row">
+  		<div class="grid">
+			<!-- speacker -->
+		<section class="teaser col-1-3">
+			<h5>Speakers</h5>
+			<a href="/speakers">
+				<img src="{% static "images/home/speakers.jpg" %}" alt="Professional Speaker">
+				<h3>Wold-Class Speakers</h3>
+			</a>
+			<p>Joining us from all around the world are over twenty fantastic speakers,here to share their stories</p>
+		</section><!-- 
+				schedule
+	--><section class="teaser col-1-3">
+			<h5>Schedule</h5>
+			<a href="/schedule">
+				<img src="{% static "images/home/schedule.jpg" %}" alt="schedules">
+				<h3>Three Inspiring Days</h3>
+			</a>
+			<p>Enjoy three inspiring and action-packed days of talk,gathering and all-round good times</p>
+		</section><!-- 
+				venue 
+		--><section class="teaser col-1-3">
+			<h5>Venue</h5>
+			<a href="/venue">
+				<img src="{% static "images/home/venue.jpg" %}" alt="venue">
+				<h3>The Chicago Theatre</h3>
+			</a>
+			<p>Within the heart of Downtown Chicago,the Chicago Theatre will provide a beautiful conference venue</p>
+		</section>
+			 </div>
+		</section>
+	{% endblock %}
+
